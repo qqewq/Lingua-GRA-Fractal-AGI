@@ -1,4 +1,8 @@
 https://doi.org/10.5281/zenodo.18729980
+## Author
+
+AAA AAA [![ORCID](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0009-0004-1872-1153)
+
 # Lingua GRA – Фрактально-осознанный язык для AGI  
 # Lingua GRA – Fractal-Aware Scientific Language for AGI
 
@@ -136,4 +140,5 @@ Lingua-GRA-Fractal-AGI/
     ├── test_fractal_utils.py
     ├── test_language_levels.py
     └── test_neural.py
+
 
