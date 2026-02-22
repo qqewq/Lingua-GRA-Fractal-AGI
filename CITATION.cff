@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Если вы используете этот репозиторий, пожалуйста, цитируйте его с помощью метаданных из этого файла. / If you use this repository, please cite it using the metadata in this file."
+title: "Lingua GRA – Fractal-Aware Scientific Language for Self-Improving AGI"
+version: "0.1.0"
+date-released: "2026-02-22"
+type: software
+
+authors:
+  - family-names: "AAA"
+    given-names: "AAA"
+    affiliation: "Independent AI researcher"
+
+repository-code: "https://github.com/yourusername/Lingua-GRA-Fractal-AGI"
+url: "https://github.com/yourusername/Lingua-GRA-Fractal-AGI"
+license: "MIT"
+
+doi: "10.5281/zenodo.XXXXXXX"  # замените после первого релиза на Zenodo
+
+abstract: >
+  Lingua GRA — экспериментальная архитектура фрактально-осознанного языка для AGI,
+  основанная на многоуровневой GRA-обнулёнке, нейросетевых представлениях и
+  фрактальной геометрии эмбеддингов. Репозиторий содержит теоретические материалы,
+  реализацию уровней языка, фрактальный регуляризатор и эксперименты с
+  фрактальной размерностью текстовых эмбеддингов.

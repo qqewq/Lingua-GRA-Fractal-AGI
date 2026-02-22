@@ -1,0 +1,16 @@
+# Core numeric and scientific stack
+numpy>=1.22
+scipy>=1.8
+matplotlib>=3.5
+
+# Text and embeddings
+gensim>=4.3
+
+# Neural networks (PyTorch)
+torch>=2.1
+
+# Utilities
+tqdm>=4.65
+
+# (optional) notebooks
+jupyter

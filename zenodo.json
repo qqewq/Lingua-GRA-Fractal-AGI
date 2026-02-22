@@ -1,0 +1,31 @@
+{
+  "title": "Lingua GRA – Fractal-Aware Scientific Language for Self-Improving AGI",
+  "upload_type": "software",
+  "description": "Lingua GRA — экспериментальная архитектура фрактально-осознанного языка для AGI, основанная на многоуровневой GRA-обнулёнке, нейросетевых представлениях и фрактальной геометрии эмбеддингов. Репозиторий содержит теоретические материалы, реализацию уровней языка, фрактальный регуляризатор и эксперименты с фрактальной размерностью текстовых эмбеддингов.",
+  "creators": [
+    {
+      "name": "AAA, AAA",
+      "affiliation": "Independent AI researcher"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "AGI",
+    "ASI",
+    "GRA",
+    "fractal language",
+    "intrinsic dimension",
+    "self-improving agents",
+    "linguistics",
+    "neural networks"
+  ],
+  "language": "eng",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/yourusername/Lingua-GRA-Fractal-AGI",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

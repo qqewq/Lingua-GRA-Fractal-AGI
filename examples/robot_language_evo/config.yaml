@@ -1,0 +1,89 @@
+# config.yaml – базовая конфигурация Lingua GRA
+
+# 🇷🇺
+# Этот файл задаёт:
+# - размеры уровней языка;
+# - веса GRA-пены (Lambda_l);
+# - параметры фрактального регуляризатора (gamma_l, target_dim);
+# - настройки обучения и экспериментов.
+#
+# 🇬🇧
+# This file specifies:
+# - language level dimensions;
+# - GRA foam weights (Lambda_l);
+# - fractal regularizer parameters (gamma_l, target_dim);
+# - training and experiment settings.
+
+model:
+  vocab_size: 50000
+  obs_dim: 16  # размер наблюдения среды для прагматического уровня
+
+  levels:
+    symbolic:
+      dim: 128
+      lambda_weight: 1.0
+      gamma_fractal: 0.0
+      target_fractal_dim: null
+
+    syntactic:
+      dim: 128
+      lambda_weight: 0.5
+      gamma_fractal: 0.0
+      target_fractal_dim: null
+
+    semantic:
+      dim: 256
+      lambda_weight: 1.0
+      gamma_fractal: 0.1
+      # Можно установить после эксперимента fractal_dimension_analysis.
+      target_fractal_dim: 7.5
+
+    pragmatic:
+      dim: 128
+      lambda_weight: 0.5
+      gamma_fractal: 0.0
+      target_fractal_dim: null
+
+    meta:
+      dim: 128
+      lambda_weight: 0.1
+      gamma_fractal: 0.0
+      target_fractal_dim: null
+
+training:
+  seed: 42
+  device: "cuda"  # "cpu" или "cuda"
+  batch_size: 32
+  max_steps: 100000
+  lr: 0.0005
+  grad_clip: 1.0
+
+  # Как часто логировать и сохранять
+  log_every: 100
+  save_every: 1000
+  eval_every: 2000
+
+  # Пути
+  output_dir: "runs/lingua_gra_experiment"
+  metrics_file: "runs/lingua_gra_experiment/metrics.jsonl"
+  checkpoint_dir: "runs/lingua_gra_experiment/checkpoints"
+
+fractal_experiments:
+  # Пути к заранее посчитанным фрактальным размерностям для разных корпусов
+  science_corpus_dim_file: "examples/fractal_dimension_analysis/science_dimension.json"
+  fairy_tales_corpus_dim_file: "examples/fractal_dimension_analysis/fairy_tales_dimension.json"
+
+  # Какой профиль использовать как целевой для семантического уровня
+  semantic_target_profile: "science"  # "science" или "fairy_tales" или "custom"
+
+  # Если "custom", то можно переопределить вручную:
+  custom_semantic_target_dim: null
+
+box_world:
+  grid_size: 5
+  msg_dim: 32
+  hidden_dim: 64
+  n_actions: 5
+  num_episodes: 500
+  max_steps_per_episode: 50
+  target_D2_messages: 5.0
