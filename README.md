@@ -1,3 +1,4 @@
+https://doi.org/10.5281/zenodo.18729980
 # Lingua GRA – Фрактально-осознанный язык для AGI  
 # Lingua GRA – Fractal-Aware Scientific Language for AGI
 
@@ -135,3 +136,4 @@ Lingua-GRA-Fractal-AGI/
     ├── test_fractal_utils.py
     ├── test_language_levels.py
     └── test_neural.py
+
